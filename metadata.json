@@ -1,0 +1,8 @@
+{
+  "name": "WUWER - Protokół / Raport Wykonania Prac",
+  "description": "Generator i rejestr raportów wykonania prac oraz godzin delegacji i podróży WUWER Sp. z o.o. z synchronizacją numeracji i wydrukiem A4.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
