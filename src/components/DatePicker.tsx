@@ -228,13 +228,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
           className={`flex-1 font-mono tracking-tight ${
             align === 'center' ? 'text-center' : align === 'right' ? 'text-right' : 'text-left'
           } ${
-            selectedInfo?.holiday || (value && value.endsWith('-12-24'))
-              ? 'text-red-700 font-bold'
-              : selectedInfo?.weekend
-              ? 'text-red-600 font-semibold'
-              : value
-              ? 'text-slate-900 font-medium'
-              : 'text-slate-400'
+            value ? 'text-slate-900 font-medium' : 'text-slate-400'
           }`}
         >
           {value ? formatDatePL(value) : placeholder}
@@ -244,11 +238,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
           type="button"
           disabled={disabled}
           tabIndex={-1}
-          className={`p-0.5 rounded transition-colors shrink-0 ${
-            selectedInfo?.holiday || selectedInfo?.weekend
-              ? 'text-red-600 hover:text-red-700'
-              : 'text-blue-600 hover:text-blue-800'
-          }`}
+          className="p-0.5 rounded text-slate-400 hover:text-blue-600 transition-colors shrink-0"
         >
           <CalendarIcon className="w-3.5 h-3.5" />
         </button>
